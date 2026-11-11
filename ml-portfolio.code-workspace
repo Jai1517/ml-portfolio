@@ -1,0 +1,10 @@
+{
+  "folders": [
+    { "name": "1 - RAG Document Q&A", "path": "rag-document-qa" },
+    { "name": "2 - MLOps Multi-Cloud", "path": "mlops-multicloud" },
+    { "name": "3 - Agentic AI Chatbot", "path": "agentic-chatbot" },
+    { "name": "4 - CNN SageMaker", "path": "cnn-sagemaker" },
+    { "name": "5 - Sentiment NLP", "path": "sentiment-nlp" }
+  ],
+  "settings": { "python.analysis.typeCheckingMode": "basic", "editor.formatOnSave": true }
+}

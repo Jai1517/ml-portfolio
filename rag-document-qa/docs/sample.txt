@@ -1,0 +1,1 @@
+Retrieval-Augmented Generation (RAG) combines a retriever with a language model. Relevant document chunks are fetched from a vector store such as FAISS and passed to the LLM as context so answers are grounded in the source documents.

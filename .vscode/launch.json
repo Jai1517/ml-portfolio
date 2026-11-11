@@ -1,0 +1,11 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    { "name": "RAG API (FastAPI)", "type": "debugpy", "request": "launch", "module": "uvicorn",
+      "args": ["app.main:app", "--reload", "--port", "8000"], "cwd": "${workspaceFolder}/rag-document-qa", "envFile": "${workspaceFolder}/.env" },
+    { "name": "MLOps: train", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/mlops-multicloud/src/train.py", "cwd": "${workspaceFolder}/mlops-multicloud" },
+    { "name": "Agentic chatbot", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/agentic-chatbot/agent.py", "console": "integratedTerminal", "envFile": "${workspaceFolder}/.env" },
+    { "name": "CNN: train (local)", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/cnn-sagemaker/train.py", "cwd": "${workspaceFolder}/cnn-sagemaker" },
+    { "name": "Sentiment: train", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/sentiment-nlp/src/train.py", "cwd": "${workspaceFolder}/sentiment-nlp" }
+  ]
+}

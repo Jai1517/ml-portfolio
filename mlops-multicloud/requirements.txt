@@ -1,0 +1,16 @@
+scikit-learn
+pandas
+numpy
+joblib
+mlflow
+dvc[s3]
+boto3
+sagemaker
+google-cloud-aiplatform
+azure-ai-ml
+azure-identity
+fastapi
+uvicorn
+bandit
+pip-audit
+pyyaml

@@ -1,0 +1,1 @@
+{ "python.defaultInterpreterPath": ".venv/bin/python", "python.testing.pytestEnabled": true, "files.exclude": { "**/__pycache__": true, "**/mlruns": true } }

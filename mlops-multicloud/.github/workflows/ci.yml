@@ -1,0 +1,16 @@
+name: ci-devsecops
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install -r requirements.txt
+      - name: SAST (bandit)
+        run: bandit -r src -ll
+      - name: Dependency audit
+        run: pip-audit || true
+      - name: Train & test
+        run: python src/prepare.py && python src/train.py

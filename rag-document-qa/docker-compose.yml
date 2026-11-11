@@ -1,0 +1,11 @@
+services:
+  api:
+    build: .
+    ports: ["8000:8000"]
+    env_file: ../.env
+    volumes: ["./faiss_index:/code/faiss_index", "./mlruns:/code/mlruns"]
+  mlflow:
+    image: ghcr.io/mlflow/mlflow
+    command: mlflow ui --host 0.0.0.0 --backend-store-uri /mlruns
+    ports: ["5000:5000"]
+    volumes: ["./mlruns:/mlruns"]

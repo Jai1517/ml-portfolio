@@ -1,0 +1,7 @@
+tensorflow
+torch
+torchvision
+scikit-learn
+sagemaker
+boto3
+numpy
